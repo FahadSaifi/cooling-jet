@@ -1,0 +1,579 @@
+/*============ Importing google fonts ==============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100,300;400;700&display=swap');
+
+/* =============Colors Variable declaration============= */
+
+:root {
+    --primary-color: #00ADEF;
+    --secondary-color: #00ADEF;
+    --gray-color: #949A97;
+    --btn-color: #00ADEF;
+    --nav-btn: #FF623A;
+    --primary-btn-color: #ED1D24;
+    --secondary-btn-color: #FBCC0A;
+}
+
+
+/*============ General Styling ============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3,
+h4,
+h5 {
+    font-weight: 300;
+    margin: 0;
+}
+
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* =============Banner section styling starts============== */
+
+.banner-section .carousel-img {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/Mask\ Group\ 2-min.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.banner-section .carousel-img.second {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/air-conditioner-g03e438794_1920.jpg);
+    background-position: top;
+}
+
+.banner-section .carousel-img.third {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/空调1.jpg);
+    background-position: top;
+}
+
+.banner-carousel-indicators {
+    margin-bottom: 1.6rem;
+}
+
+.banner-carousel-indicators li {
+    opacity: 1;
+}
+
+.banner-carousel-indicators li:nth-child(2) {
+    margin: 0 6px;
+}
+
+.banner-carousel-indicators li.active {
+    background-color: var(--primary-color);
+}
+
+.banner-section-content {
+    width: 55%;
+}
+
+.banner-section-heading h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.banner-section-text p {
+    color: #fff;
+    font-size: 1.05rem;
+    margin-top: .8rem;
+}
+
+.banner-section-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    margin-top: 1.5rem;
+}
+
+.banner-section-btn a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =============Banner section styling ends================ */
+
+
+/* =============Welcome section styling starts================ */
+
+.welcome-section {
+    margin-top: 4rem;
+}
+
+.welcome-heading h2,
+.about-us-heading h2,
+.why-choose-heading h2,
+.our-service-heading h2,
+.testimonials-heading h2,
+.faq-heading h2,
+.contac-us-heading h2 {
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.welcome-heading h2::after,
+.about-us-heading h2::after,
+.why-choose-heading h2::after,
+.our-service-heading h2::after,
+.testimonials-heading h2::after,
+.faq-heading h2::after,
+.contac-us-heading h2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16rem;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-top: 3px;
+}
+
+.welcome-text p {
+    margin-top: 1.5625rem;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+.welcome-section-services {
+    margin-top: 2.5rem;
+}
+
+.welcome-card {
+    border: 1px solid #d3cbcb;
+}
+
+.welcome-card-img img {
+    width: 100%;
+}
+
+.welcome-card-content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.welcome-card-icon i {
+    font-size: 30px;
+    color: var(--primary-color);
+    padding-right: 20px;
+    border-right: .01rem solid #707070;
+}
+
+.welcome-card-text {
+    margin-left: 1rem;
+}
+
+.welcome-card-text h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.welcome-card-text p {
+    font-size: 1.05rem;
+    line-height: 1.125rem;
+    margin-top: .3125rem;
+}
+
+
+/* =============Welcome section styling ends================ */
+
+
+/* =============About us section styling starts================ */
+
+.about-us {
+    margin-top: 4rem;
+}
+
+.about-us-content {
+    margin-top: 4.5rem;
+}
+
+.about-us-heading h2::after {
+    width: 6rem;
+}
+
+.about-us-img img {
+    width: 100%;
+}
+
+.about-us-right-section {
+    margin-left: 2rem;
+}
+
+.about-us-text h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about-us-text p {
+    font-size: 1.05rem;
+    margin-top: .8rem;
+}
+
+.about-us-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+
+/* =============About us section styling ends================ */
+
+
+/* =============Why choose section styling starts================ */
+
+.why-choose-section {
+    margin-top: 4rem;
+}
+
+.why-choose-heading h2::after {
+    width: 10rem;
+}
+
+.why-choose-cards-section {
+    margin-top: 4rem;
+}
+
+.why-choose-card {
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    height: 220px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.why-choose-card img {
+    width: 80px;
+}
+
+.why-choose-card-content h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+
+/* =============Why chosse section styling ends================ */
+
+
+/* =============Our services section styling starts================ */
+
+.our-services-section {
+    margin-top: 4rem;
+}
+
+.our-service-heading h2::after {
+    width: 9rem;
+}
+
+.our-service-cards-section {
+    margin-top: 4.5rem;
+}
+
+.our-service-card {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    padding: 1rem;
+}
+
+.service-card-img img {
+    width: 70px;
+}
+
+.service-card-content h3 {
+    color: #949A97;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.service-card-content p {
+    font-size: 1.05rem;
+    margin-top: .5rem;
+}
+
+
+/* =============Why services section styling ends================ */
+
+
+/* =============Testimonials section styling Starts================ */
+
+.testimonials-section {
+    margin-top: 4.5rem;
+}
+
+.testimonials-heading h2::after {
+    width: 17rem;
+}
+
+.testimonials-slider {
+    margin-top: 3rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: unset;
+    z-index: 1;
+    width: unset;
+    padding: 0;
+    opacity: 1!important;
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carousel-btn button:nth-child(1) {
+    margin-right: 10px;
+}
+
+.carousel-btn button:nth-child(2) {
+    margin-left: 10px;
+}
+
+.carousel-btn i {
+    font-size: 20px;
+    color: #000;
+    padding: 8px 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.testimonial-card {
+    border: 2px solid var(--primary-color);
+    border-radius: 40px;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.testimonial-card-img img {
+    width: 100%;
+}
+
+.testimonial-content {
+    margin-top: 50px;
+}
+
+.customer-name h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.ratings {
+    margin-top: .425rem;
+}
+
+.ratings img {
+    width: 20px;
+}
+
+.review p {
+    font-size: 1.05rem;
+    margin-top: .6rem;
+}
+
+
+/* =============Testimonials section styling ends================ */
+
+
+/* =============FAQ section styling starts================ */
+
+.faq-section {
+    margin-top: 4rem;
+}
+
+.faq-questions {
+    margin-top: 4.5rem;
+}
+
+.faq-heading h2::after {
+    width: 20rem;
+}
+
+.accordion-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.accordion-text:not(.collapsed) i {
+    transform: rotate(180deg);
+}
+
+.faq-questions .accordion .card {
+    margin-top: 20px;
+    background-color: #fff!important;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .2);
+    border: none!important;
+}
+
+.faq-questions .accordion .card:focus,
+.faq-questions .accordion .card:active {
+    background-color: #fff!important;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+
+/* =============FAQ section styling ends================ */
+
+
+/* =============Contact us section styling starts================ */
+
+.contact-us-section {
+    margin-top: 4rem;
+    background-color: #eeeeea;
+    padding: 40px 0;
+}
+
+.contact-us-form-section {
+    margin-top: 3rem;
+}
+
+.contac-us-heading h2::after {
+    width: 8rem;
+}
+
+.contact-form-text h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 2.8125rem;
+    font-weight: 300;
+}
+
+.input-field input {
+    width: 100%;
+    height: 2.875rem;
+    outline: 0;
+    border: none;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.message-box {
+    height: 5.625rem;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    padding-top: .5rem;
+    padding-left: .5rem;
+    border-radius: 4px;
+}
+
+.submit-btn input {
+    width: 100%;
+    height: 2.5rem;
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.contact-form-wrapper {
+    height: 100%;
+}
+
+.contact-form-wrapper form {
+    height: 100%;
+}
+
+
+/* =============Contact us section styling ends================ */
+
+
+/* =============we service all brands section styling ends================ */
+
+.we-service-all-brands {
+    margin-top: 4rem;
+    padding: 1.5625rem 0;
+    background-color: #eeeeea;
+}
+
+.all-brands-heading h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.we-service-all-brands .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.logo-slider {
+    margin-top: 10px;
+}
+
+
+/* =============we service all brands section styling ends================ */

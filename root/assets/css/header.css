@@ -1,0 +1,205 @@
+/* :root {
+    --primary-color: #00ADEF;
+    --secondary-color: #FF623A;
+    --gray-color: #949A97;
+} */
+
+.top-header {
+    padding: .5rem 2.5rem;
+}
+
+.logo {
+    width: 140px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.header-wrapper .top-header,
+.phone-call-box a,
+.mail-box a,
+.header-wrapper .contact-info {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-wrapper .top-header {
+    justify-content: space-between;
+}
+
+.mail-box img,
+.phone-call-box img {
+    width: 30px;
+    margin-right: .625rem;
+}
+
+.dark-theme-icon {
+    display: flex;
+    align-items: center;
+}
+
+.dark-theme-icon .theme-color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ED1D24;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.theme-color-circle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-color-circle .theme-color:nth-child(2) {
+    background-color: #09AEB8;
+}
+
+.theme-color-circle .theme-color:nth-child(3) {
+    background-color: #004976;
+}
+
+.theme-color-circle .theme-color:nth-child(4) {
+    background-color: #FBCC0A;
+}
+
+.dark-theme-icon img {
+    width: 25px;
+    animation: rotate 6s linear infinite;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.dark-theme-icon:hover img {
+    animation: none;
+}
+
+.dark-theme-icon .theme-color-box {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: -130px;
+    top: 30%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    border-radius: 30px 0 0 30px;
+    transition: .2s ease;
+}
+
+.dark-theme-icon .theme-color-box.show {
+    right: 0;
+}
+
+.tooltip-text {
+    position: fixed;
+    top: 30%;
+    right: 65px;
+    z-index: 100;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: .1s ease;
+}
+
+.tooltip-text.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tooltip-text::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    transform: translateX(13px) rotate(46deg);
+}
+
+.tooltip-text p {
+    font-size: 1.2rem;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.phone-call-box {
+    margin-right: 1rem;
+}
+
+.mail-box {
+    margin-left: 1rem;
+}
+
+.phone-call-text p:nth-child(1),
+.mail-box-text p:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.phone-call-text p:nth-child(2),
+.mail-box-text p:nth-child(2) {
+    color: #000;
+    line-height: 15px;
+}
+
+
+/*============== Navbar sytling starts ==============*/
+
+.navigation-bar {
+    background-color: var(--primary-color);
+    padding: .8rem 2.5rem;
+    transition: .5s ease;
+}
+
+.bottom-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation-bar .navigation-link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 2rem;
+    padding: 0!important;
+    display: flex;
+    align-items: flex-start;
+}
+
+.navbar-nav .nav-item .navigation-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.get-qoute-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+}
+
+.get-qoute-btn a {
+    color: var(--btn-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navigation-link i {
+    font-size: 16px;
+}
