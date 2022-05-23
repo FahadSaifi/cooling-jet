@@ -6,10 +6,11 @@ $('.owl-carousel').owlCarousel({
     autoplaySpeed: 500,
     autoplayHoverPause: true,
     slideTransition: 'ease',
-    nav: true,
+    nav: false,
     responsive: {
         0: {
-            items: 1
+            items: 2,
+            margin: 40
         },
         600: {
             items: 3

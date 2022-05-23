@@ -4,7 +4,6 @@ footer {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)), url(/root/assets/images/technicians/a.png);
     background-position: center;
     background-size: cover;
-    /* background-color: rgba(0, 0, 0, .8); */
     padding: 2.5rem 0;
 }
 
@@ -79,7 +78,7 @@ footer .social-media-icons i.footer-linkedin {
 
 .footer-mailbox input[type="tel"] {
     width: 12rem;
-    height: 40px;
+    height: 2.5rem;
     border: 0;
     background-color: #fff;
     outline: none;
@@ -89,11 +88,46 @@ footer .social-media-icons i.footer-linkedin {
 
 .footer-mailbox input[type="submit"] {
     width: 4.5rem;
-    height: 40px;
+    height: 2.5rem;
     border: 0;
     background-color: var(--primary-color);
     color: #fff;
     font-family: 'Josefin sans';
     font-weight: 300;
     border-radius: 0 3px 3px 0;
+}
+
+
+/* =============media queries for tablets and ipads============= */
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+
+/* ==============Media queries for mobile phones landscape mode============== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .footer-mailbox input[type="tel"] {
+        width: 7.2rem;
+        height: 2.5rem;
+    }
+    .footer-mailbox input[type="submit"] {
+        width: 5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        padding: 1.8rem 1.8rem 8rem 1.8rem;
+    }
+    .quick-links,
+    .footer-contact-us,
+    .newsletter {
+        margin-top: 2.5rem;
+    }
+    .footer-links,
+    .footer-contact-links,
+    .footer-mailbox {
+        margin-top: 10px;
+    }
 }

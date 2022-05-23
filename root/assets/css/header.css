@@ -8,9 +8,13 @@
     padding: .5rem 2.5rem;
 }
 
+.bottom-navbar-wrapper {
+    display: none;
+}
+
 .logo {
-    width: 140px;
-    height: 40px;
+    width: 8.75rem;
+    height: 2.5rem;
     background-color: var(--primary-color);
 }
 
@@ -159,7 +163,7 @@
 .navigation-bar {
     background-color: var(--primary-color);
     padding: .8rem 2.5rem;
-    transition: .5s ease;
+    /* height: 200px; */
 }
 
 .bottom-header {
@@ -185,8 +189,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 140px;
-    height: 40px;
+    width: 8.75rem;
+    height: 2.5rem;
     background-color: #fff;
 }
 
@@ -202,4 +206,54 @@
 
 .navigation-link i {
     font-size: 16px;
+}
+
+@media (max-width: 575px) {
+    .navigation-bar {
+        display: none;
+    }
+    .header-wrapper .top-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-info {
+        margin-top: 20px;
+    }
+    .bottom-navbar-wrapper {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 3%;
+        width: 100%;
+        z-index: 1000;
+    }
+    .bottom-navbar {
+        width: 90%;
+        margin: 0 auto;
+        background-color: var(--primary-color);
+        border-radius: 60px;
+        padding: 14px 26px;
+        box-shadow: 0 0 14px rgba(0, 0, 0, .4);
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .bottom-navbar .navbar-link {
+        margin-left: 24px;
+        margin-left: 24px;
+    }
+    .bottom-navbar .navbar-link a {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+    .bottom-navbar .navbar-link a img {
+        width: 20px;
+        margin-bottom: 6px;
+    }
 }

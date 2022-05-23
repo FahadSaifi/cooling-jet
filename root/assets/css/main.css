@@ -5,17 +5,21 @@
 /* =============Colors Variable declaration============= */
 
 :root {
-    --primary-color: #00ADEF;
-    --secondary-color: #00ADEF;
+    --primary-color: #004976;
+    --secondary-color: #004976;
     --gray-color: #949A97;
-    --btn-color: #00ADEF;
+    --btn-color: #004976;
     --nav-btn: #FF623A;
-    --primary-btn-color: #ED1D24;
+    --primary-btn-color: #cc292e;
     --secondary-btn-color: #FBCC0A;
 }
 
 
 /*============ General Styling ============*/
+
+html {
+    font-size: 16px;
+}
 
 * {
     margin: 0;
@@ -112,8 +116,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 140px;
-    height: 40px;
+    width: 8.75rem;
+    height: 2.5rem;
     background-color: var(--secondary-color);
     margin-top: 1.5rem;
 }
@@ -169,7 +173,7 @@ a {
 }
 
 .welcome-text p {
-    margin-top: 1.5625rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 1.05rem;
 }
@@ -193,7 +197,7 @@ a {
 }
 
 .welcome-card-icon i {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--primary-color);
     padding-right: 20px;
     border-right: .01rem solid #707070;
@@ -254,8 +258,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 40px;
+    width: 8.75rem;
+    height: 2.5rem;
     color: #fff;
     background-color: var(--primary-color);
     text-decoration: none;
@@ -361,7 +365,7 @@ a {
 }
 
 .testimonials-slider {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .carousel-control-next,
@@ -389,9 +393,13 @@ a {
 }
 
 .carousel-btn i {
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
-    padding: 8px 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px solid var(--primary-color);
     border-radius: 4px;
 }
@@ -400,6 +408,7 @@ a {
     border: 2px solid var(--primary-color);
     border-radius: 40px;
     padding: 2rem 2rem 0 2rem;
+    overflow: hidden;
 }
 
 .testimonial-card-img img {
@@ -407,7 +416,7 @@ a {
 }
 
 .testimonial-content {
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .customer-name h3 {
@@ -416,7 +425,7 @@ a {
 }
 
 .ratings {
-    margin-top: .425rem;
+    margin-top: .8rem;
 }
 
 .ratings img {
@@ -425,7 +434,7 @@ a {
 
 .review p {
     font-size: 1.05rem;
-    margin-top: .6rem;
+    margin-top: 1rem;
 }
 
 
@@ -577,3 +586,120 @@ a {
 
 
 /* =============we service all brands section styling ends================ */
+
+
+/* =============media queries for tablets and ipads============= */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+    .why-choose-card.last {
+        margin-top: 24px;
+    }
+    .our-service-card {
+        height: 240px;
+    }
+    .service-card-img img {
+        width: 60px;
+    }
+    .testimonial-content {
+        margin-top: 20px;
+    }
+}
+
+
+/* ==============Media queries for mobile phones landscape mode============== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+    .banner-section-content {
+        width: 100%;
+    }
+    .why-choose-card.last {
+        margin-top: 26px;
+    }
+    .why-choose-card {
+        height: 180px;
+    }
+    .why-choose-card img {
+        width: 60px;
+    }
+    .our-service-card {
+        height: 220px;
+    }
+    .service-card-img img {
+        width: 50px;
+    }
+    .message-box {
+        height: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    html {
+        font-size: 13px;
+    }
+    .banner-section .carousel-img {
+        height: 70vh;
+    }
+    .banner-section-content {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .banner-section-heading h1 {
+        font-size: 2.5rem;
+    }
+    .welcome-heading h2,
+    .about-us-heading h2,
+    .why-choose-heading h2,
+    .our-service-heading h2,
+    .testimonials-heading h2,
+    .faq-heading h2,
+    .contac-us-heading h2 {
+        font-size: 2rem;
+    }
+    .welcome-section,
+    .about-us,
+    .why-choose-section,
+    .our-services-section,
+    .testimonials-section,
+    .faq-section {
+        padding: 0 16px;
+    }
+    .why-choose-card-content h3 {
+        font-size: 24px;
+    }
+    .about-us-content,
+    .why-choose-carousel,
+    .services-carousel {
+        margin-top: 40px;
+    }
+    .about-us-right-section {
+        margin-left: 0;
+    }
+    .welcome-card.second,
+    .welcome-card.third {
+        margin-top: 26px;
+    }
+    .our-service-card {
+        border: 1px solid var(--primary-color);
+    }
+    .testimonial-content {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .testimonial-card {
+        padding: 30px;
+    }
+    .input-field,
+    .message-box,
+    .submit-btn {
+        margin-top: 20px;
+    }
+    .contact-us-section {
+        padding: 40px 16px;
+    }
+}
