@@ -1,0 +1,329 @@
+    /*============ Importing google fonts ==============*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100,300;400;700&display=swap');
+    /* =============Colors Variable declaration============= */
+    
+     :root {
+        --primary-color: #004976;
+        --secondary-color: #004976;
+        --gray-color: #949A97;
+        --btn-color: #004976;
+        --nav-btn: #FF623A;
+        --primary-btn-color: #cc292e;
+        --secondary-btn-color: #FBCC0A;
+    }
+    /*============ General Styling ============*/
+    
+    html {
+        font-size: 16px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: .3s ease;
+    }
+    
+    body {
+        font-family: 'Josefin Sans';
+        overflow-x: hidden;
+    }
+    
+    h1 {
+        font-weight: 700;
+        margin: 0;
+    }
+    
+    h2 {
+        font-weight: 300;
+    }
+    
+    h3,
+    h4,
+    h5 {
+        font-weight: 300;
+        margin: 0;
+    }
+    
+    ul,
+    li,
+    p,
+    a {
+        margin: 0;
+        list-style: none;
+        text-decoration: none!important;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        position: unset;
+        z-index: 1;
+        width: unset;
+        padding: 0;
+        opacity: 1!important;
+    }
+    
+    .carousel-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    
+    .carousel-btn button:nth-child(1) {
+        margin-right: 10px;
+    }
+    
+    .carousel-btn button:nth-child(2) {
+        margin-left: 10px;
+    }
+    
+    .carousel-btn i {
+        font-size: 16px;
+        color: #000;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--primary-color);
+        border-radius: 4px;
+    }
+    /* =================Utility classes================== */
+    
+    .underline {
+        font-size: 2.5rem;
+        position: relative;
+        text-align: center;
+    }
+    
+    .underline::after {
+        content: '';
+        width: 6rem;
+        height: 2px;
+        background-color: var(--primary-color);
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+    
+    .margin-top {
+        margin-top: 4.5rem;
+    }
+    
+    .content-margin-top {
+        margin-top: 4rem;
+    }
+    /* ===============Banner section styling starts=============== */
+    
+    .banner-section {
+        height: 70vh;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/contact-us.jpeg);
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+    }
+    
+    .banner-section-heading {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .banner-section-heading h1 {
+        font-size: 2.8rem;
+        color: #fff;
+    }
+    
+    .banner-section-heading p {
+        font-size: 1.05rem;
+        color: #fff;
+        text-align: center;
+        margin-top: 1.8rem;
+    }
+    
+    .link {
+        margin-top: 1.5rem;
+        color: #fff;
+    }
+    
+    .link a {
+        text-decoration: none;
+        color: #fff;
+    }
+    /* ===============Banner section styling ends=============== */
+    /* ===============Contact form section styling start=============== */
+    
+    .contact-form-img {
+        position: relative;
+    }
+    
+    .contact-form-img::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .contact-form-img img {
+        width: 100%;
+    }
+    
+    .input-field input {
+        width: 100%;
+        height: 2.875rem;
+        outline: 0;
+        border: 2px solid #ececec;
+        border-radius: 4px;
+        padding-left: 8px;
+    }
+    
+    .message-box {
+        height: 5.625rem;
+    }
+    
+    .message-box textarea {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        outline: 0;
+        resize: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        border-radius: 4px;
+        border: 2px solid #ececec;
+    }
+    
+    .submit-btn input {
+        width: 100%;
+        height: 2.5rem;
+        border: none;
+        color: #fff;
+        background-color: var(--primary-color);
+        border-radius: 4px;
+    }
+    
+    .contact-form {
+        height: 100%;
+    }
+    
+    .contact-form-text h3 {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 2.8125rem;
+        font-weight: 300;
+    }
+    
+    .contact-form-wrapper form {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .contact-form-wrapper {
+        margin: 2.6rem 0;
+    }
+    
+    .contact-info-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.6rem;
+    }
+    
+    .phone-call a,
+    .location,
+    .mail a {
+        display: flex;
+        align-items: center;
+    }
+    
+    .phone-call i,
+    .location i,
+    .mail i {
+        width: 3.125rem;
+        height: 3.125rem;
+        border: 2px solid var(--primary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+    
+    .text {
+        margin-left: .6rem;
+    }
+    
+    .text p {
+        color: #000;
+        line-height: 1.25rem;
+    }
+    /* ===============Contact form section styling ends=============== */
+    /* =============Media queries for tablets ipads portrait mode============= */
+    
+    @media (min-width: 768px) and (max-width: 992px) {
+        html {
+            font-size: 13px;
+        }
+        .banner-section {
+            height: 40vh;
+        }
+        .banner-section-heading {
+            width: 60%;
+        }
+        .message-box {
+            height: 40px;
+        }
+    }
+    /* ==============Media queries for mobile phones landscape mode============== */
+    
+    @media (min-width: 576px) and (max-width: 767px) {
+        html {
+            font-size: 10px;
+        }
+        .banner-section-content {
+            width: 100%;
+        }
+        .message-box {
+            height: 30px;
+        }
+    }
+    /* ================Media queries for small devices mobile phones================ */
+    
+    @media (max-width: 575px) {
+        html {
+            font-size: 13px;
+        }
+        .banner-section-heading {
+            width: 80%;
+        }
+        .contact-info-bar {
+            flex-direction: column;
+            align-items: unset;
+        }
+        .location,
+        .mail {
+            margin-top: 20px;
+        }
+        .side-padding {
+            padding: 0 20px;
+        }
+        .input-field,
+        .message-box,
+        .submit-btn {
+            margin-top: 20px;
+        }
+    }

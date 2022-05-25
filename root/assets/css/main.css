@@ -10,7 +10,7 @@
     --gray-color: #949A97;
     --btn-color: #004976;
     --nav-btn: #FF623A;
-    --primary-btn-color: #cc292e;
+    --primary-btn-color: #ED1D24;
     --secondary-btn-color: #FBCC0A;
 }
 
@@ -64,7 +64,7 @@ a {
 
 .banner-section .carousel-img {
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/Mask\ Group\ 2-min.webp);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/home-banner1.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -72,12 +72,12 @@ a {
 }
 
 .banner-section .carousel-img.second {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/air-conditioner-g03e438794_1920.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/home-banner-2.webp);
     background-position: top;
 }
 
 .banner-section .carousel-img.third {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/空调1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/technicians/home-banner3.webp);
     background-position: top;
 }
 

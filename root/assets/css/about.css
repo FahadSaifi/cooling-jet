@@ -193,12 +193,7 @@
         display: flex;
         align-items: center;
         padding-bottom: .5rem;
-        border-bottom: 1px solid #DEE2E6;
-    }
-    
-    .contact-info i {
-        color: var(--primary-color);
-        font-size: 25.6px;
+        /* border-bottom: 1px solid #DEE2E6; */
     }
     
     .contact-text {
@@ -348,6 +343,17 @@
         font-weight: 400;
     }
     /* =============Our team section styling ends================ */
+    /* =============Our achievements section styling start================ */
+    
+    .achievements-bg {
+        /* background-image: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/root/assets/images/achievements.jpg);
+        background-size: cover;
+        background-position: center; */
+        /* background-color: rgba(0, 0, 0, .5); */
+        padding: 1.875rem 0;
+        margin-top: 3rem;
+    }
+    /* =============Our achievements section styling ends================ */
     /* =============Media queries for tablets ipads portrait mode============= */
     
     @media (min-width: 768px) and (max-width: 992px) {
@@ -407,6 +413,7 @@
             width: 100px;
         }
     }
+    /* ================Media queries for small devices mobile phones=============== */
     
     @media (max-width: 575px) {
         html {

@@ -157,6 +157,10 @@
     line-height: 15px;
 }
 
+.phone-call-box i {
+    display: none;
+}
+
 
 /*============== Navbar sytling starts ==============*/
 
@@ -215,42 +219,66 @@
     .header-wrapper .top-header {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        padding: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        border-radius: 0 0 20px 20px;
+        backdrop-filter: blur(10px);
     }
-    .contact-info {
-        margin-top: 20px;
+    .mail-box {
+        display: none;
+    }
+    .phone-call-box i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .phone-call-text p:nth-child(2),
+    .phone-call-text p:nth-child(1) {
+        color: #fff;
+    }
+    .phone-call-box img {
+        display: none;
     }
     .bottom-navbar-wrapper {
         display: block;
         position: fixed;
-        right: 0;
-        bottom: 3%;
+        left: 0;
+        bottom: 0;
         width: 100%;
         z-index: 1000;
     }
     .bottom-navbar {
-        width: 90%;
-        margin: 0 auto;
         background-color: var(--primary-color);
-        border-radius: 60px;
-        padding: 14px 26px;
+        padding: 10px 26px;
         box-shadow: 0 0 14px rgba(0, 0, 0, .4);
         display: flex;
         align-items: center;
         overflow-x: auto;
     }
     .bottom-navbar .navbar-link {
-        margin-left: 24px;
-        margin-left: 24px;
+        margin-left: 38px;
     }
     .bottom-navbar .navbar-link a {
         font-size: 1rem;
-        font-weight: 400;
+        font-weight: 300;
         color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        width: 45px;
     }
     .bottom-navbar .navbar-link a img {
         width: 20px;
