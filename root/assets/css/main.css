@@ -327,6 +327,10 @@ a {
     margin-top: 4.5rem;
 }
 
+.our-service-cards-section .our-service-card {
+    height: 300px;
+}
+
 .our-service-card {
     text-align: center;
     background-color: #fff;
@@ -348,6 +352,10 @@ a {
 .service-card-content p {
     font-size: 1.05rem;
     margin-top: .5rem;
+}
+
+.services-carousel .our-service-card {
+    height: 220px;
 }
 
 
@@ -605,6 +613,9 @@ a {
     }
     .testimonial-content {
         margin-top: 20px;
+    }
+    .message-box {
+        height: 40px;
     }
 }
 

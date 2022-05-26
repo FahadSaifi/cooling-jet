@@ -131,7 +131,7 @@ a {
 
 .banner-section {
     height: 70vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/services.jpeg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/services-banner.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -195,6 +195,7 @@ a {
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border-radius: 6px;
+    height: 400px;
 }
 
 .service-card-img img {
@@ -235,14 +236,20 @@ a {
     .banner-section-heading {
         width: 60%;
     }
+    .service-card {
+        height: 300px;
+    }
 }
 
 
 /* ================Media queries for mobile phones landscape mode================== */
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     html {
         font-size: 10px;
+    }
+    .service-card {
+        height: 230px;
     }
 }
 
@@ -267,5 +274,8 @@ a {
     }
     .content-margin-top {
         margin-top: 0;
+    }
+    .service-card {
+        height: 330px;
     }
 }

@@ -120,7 +120,7 @@
     
     .banner-section {
         height: 70vh;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/contact-us.jpeg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/contact-us-banner.webp);
         background-size: cover;
         background-position: top;
         background-attachment: fixed;

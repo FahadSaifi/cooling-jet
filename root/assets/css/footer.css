@@ -11,7 +11,7 @@ footer {
     font-size: 1.05rem;
     color: #fff;
     margin-top: 2rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 footer .social-media-icons {
@@ -39,36 +39,47 @@ footer .social-media-icons i.footer-linkedin {
     font-weight: 400;
 }
 
+.quick-links h3,
+.footer-contact-us h3 {
+    text-align: center;
+}
+
 .footer-links {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footer-links li {
     margin-top: 16px;
+    text-align: center;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer-contact-links {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .mail-link {
     margin-top: .6rem;
+    text-align: center;
+}
+
+.phone-link {
+    text-align: center;
 }
 
 .phone-link a,
 .mail-link a {
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer-mailbox {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footer-input {
@@ -93,7 +104,7 @@ footer .social-media-icons i.footer-linkedin {
     background-color: var(--primary-color);
     color: #fff;
     font-family: 'Josefin sans';
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 0 3px 3px 0;
 }
 

@@ -120,7 +120,7 @@
     
     .banner-section {
         height: 70vh;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/about.jpg);
+        background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/about-us-banner.webp);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -132,7 +132,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 90%;
         margin: 0 auto;
     }
     
@@ -143,7 +143,7 @@
     
     .banner-section-heading p {
         font-size: 1.05rem;
-        color: #fff;
+        /* color: #fff; */
         text-align: center;
         margin-top: 1.8rem;
     }
@@ -223,7 +223,7 @@
     }
     
     .queries {
-        margin-top: 16px;
+        margin-top: 26px;
     }
     
     .queries a {
