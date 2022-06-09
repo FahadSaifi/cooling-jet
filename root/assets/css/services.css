@@ -130,7 +130,7 @@ a {
 /* ================Banner section styling starts================== */
 
 .banner-section {
-    height: 70vh;
+    height: 60vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(/root/assets/images/technicians/services-banner.webp);
     background-size: cover;
     background-position: center;
@@ -175,49 +175,90 @@ a {
 
 /* ================Services section styling start================== */
 
-
-/* .our-services-section {
-    background-color: #eeeeea;
-} */
-
-.our-services-section {
-    margin-bottom: 40px;
-}
-
-.our-services-heading p {
-    text-align: center;
-    margin-top: 1.8rem;
-    font-weight: 400;
-    font-size: 1.2rem;
+.service {
+    margin-top: 1rem;
 }
 
 .service-card {
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    border-radius: 6px;
-    height: 400px;
+    border: 1px solid #eeeeea;
 }
 
 .service-card-img img {
     width: 100%;
 }
 
-.service-card-heading h3 {
-    font-size: 1.5rem;
+.service-card-title h3 {
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-top: 1.25rem;
-    color: #000;
+    margin-top: 1rem;
 }
 
-.service-card-description p {
-    font-size: 1.05rem;
-    font-weight: 400;
+.service-list-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.service-list-heading .underline::after {
+    left: 0;
+    transform: unset;
+}
+
+.service a {
+    display: block;
+    width: 80%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 1rem;
     color: #000;
+    font-size: 1rem;
+    transition: .2s ease;
+}
+
+.service a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service-card-content {
+    padding: .625rem 1.25rem;
+}
+
+.service-card-amount p {
+    font-size: 1.3rem;
+    color: var(--primary-color);
     margin-top: .5rem;
 }
 
-.services-cards-second-row {
-    margin-top: 1.76rem;
+.service-card-amount span {
+    text-decoration: line-through;
+}
+
+.service-cards-btn {
+    margin-top: .7rem;
+    display: flex;
+    align-items: center;
+}
+
+.service-cards-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 13px;
+}
+
+.service-cards-btn a:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.second {
+    margin-top: 1.875rem;
 }
 
 
@@ -236,8 +277,11 @@ a {
     .banner-section-heading {
         width: 60%;
     }
-    .service-card {
-        height: 300px;
+    .service-card-amount p {
+        font-size: 1.2rem;
+    }
+    .service-card-title h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -248,8 +292,16 @@ a {
     html {
         font-size: 10px;
     }
-    .service-card {
-        height: 230px;
+    .service-card-amount p {
+        font-size: 1.1rem;
+    }
+    .service-card-title h3 {
+        font-size: 1.05rem;
+    }
+    .service-cards-btn a {
+        font-size: 10px;
+        width: 70px;
+        height: 20px;
     }
 }
 
@@ -266,16 +318,19 @@ a {
     .side-padding {
         padding: 0 20px;
     }
-    .services-cards-second-row {
-        margin-top: 0;
-    }
     .service-card {
-        margin-top: 35px;
+        margin-top: 28px;
     }
     .content-margin-top {
         margin-top: 0;
     }
-    .service-card {
-        height: 330px;
+    .second {
+        margin-top: 0;
+    }
+    .list-row {
+        flex-direction: column-reverse;
+    }
+    .services-left-section {
+        margin: 30px 0;
     }
 }

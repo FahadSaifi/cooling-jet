@@ -5,12 +5,13 @@ footer {
     background-position: center;
     background-size: cover;
     padding: 2.5rem 0;
+    background-color: rgb(41, 37, 37);
 }
 
 .footer-text p {
     font-size: 1.05rem;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 400;
 }
 
@@ -23,11 +24,11 @@ footer .social-media-icons i {
     font-size: 1.1rem;
 }
 
-footer .social-media-icons i {
+footer .social-media-icons a {
     margin-left: 1rem;
 }
 
-footer .social-media-icons i.footer-linkedin {
+footer .social-media-icons a:nth-child(1) {
     margin-left: 0;
 }
 
@@ -39,18 +40,16 @@ footer .social-media-icons i.footer-linkedin {
     font-weight: 400;
 }
 
-.quick-links h3,
-.footer-contact-us h3 {
-    text-align: center;
-}
-
 .footer-links {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .footer-links li {
     margin-top: 16px;
-    text-align: center;
+}
+
+.footer-links li:nth-child(1) {
+    margin-top: 0;
 }
 
 .footer-links a {
@@ -65,11 +64,6 @@ footer .social-media-icons i.footer-linkedin {
 
 .mail-link {
     margin-top: .6rem;
-    text-align: center;
-}
-
-.phone-link {
-    text-align: center;
 }
 
 .phone-link a,
@@ -79,7 +73,7 @@ footer .social-media-icons i.footer-linkedin {
 }
 
 .footer-mailbox {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .footer-input {
@@ -108,10 +102,21 @@ footer .social-media-icons i.footer-linkedin {
     border-radius: 0 3px 3px 0;
 }
 
+.quick-links-wrapper {
+    margin-left: 2rem;
+}
+
 
 /* =============media queries for tablets and ipads============= */
 
-@media (min-width: 768px) and (max-width: 992px) {}
+@media (min-width: 768px) and (max-width: 992px) {
+    .quick-links-wrapper {
+        margin-left: 20px;
+    }
+    footer .social-media-icons img {
+        width: 20px;
+    }
+}
 
 
 /* ==============Media queries for mobile phones landscape mode============== */
@@ -140,5 +145,8 @@ footer .social-media-icons i.footer-linkedin {
     .footer-contact-links,
     .footer-mailbox {
         margin-top: 10px;
+    }
+    .quick-links-wrapper {
+        margin-left: 0;
     }
 }

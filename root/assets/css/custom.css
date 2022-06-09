@@ -1,0 +1,358 @@
+/*============ Importing google fonts ==============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100,300;400;700&display=swap');
+
+/* =============Colors Variable declaration============= */
+
+ :root {
+    --primary-color: #004976;
+    --secondary-color: #004976;
+    --gray-color: #949A97;
+    --btn-color: #004976;
+    --nav-btn: #FF623A;
+    --primary-btn-color: #cc292e;
+    --secondary-btn-color: #FBCC0A;
+}
+
+
+/*============ General Styling ============*/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* transition: .3s ease; */
+}
+
+body {
+    font-family: 'Josefin Sans';
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3,
+h4,
+h5 {
+    font-weight: 300;
+    margin: 0;
+}
+
+ul,
+li,
+p,
+a {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+
+/* =================Utility classes================== */
+
+.underline {
+    font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.underline::after {
+    content: '';
+    width: 6rem;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.margin-top {
+    margin-top: 4.5rem;
+}
+
+.content-margin-top {
+    margin-top: 4rem;
+}
+
+
+/* =================Banner section styling starts==================== */
+
+.banner-section {
+    background-color: #eeeeea;
+    padding: 30px 0;
+}
+
+.banner-section-heading h1 {
+    font-size: 2.8rem;
+}
+
+
+/* =================Banner section styling ends==================== */
+
+
+/* =================Services section styling ends==================== */
+
+.our-services-section {
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-top: 1rem;
+}
+
+.service.active a {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service-list-heading h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.service-list-heading .underline::after {
+    left: 0;
+    transform: unset;
+}
+
+.service a {
+    display: block;
+    width: 80%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 1rem;
+    color: #000;
+    font-size: 1rem;
+    transition: .2s ease;
+}
+
+.service a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.service-img img {
+    width: 100%;
+}
+
+.services-list-section .nav-link {
+    color: #000;
+    transition: all .13s ease;
+    width: 10rem;
+    text-align: center;
+    border: 2px solid var(--primary-color);
+}
+
+.services-list-section .nav-item.second {
+    margin-left: 10px;
+}
+
+.services-list-section .nav-link.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.services-content {
+    padding: 0 20px;
+}
+
+.service-heading h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 1.6rem;
+}
+
+.service-description p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: .6rem;
+}
+
+.service-card-text h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.service-card-text p {
+    font-size: 1.05rem;
+    color: #a3a3a3;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.service-charge p {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-top: .5rem;
+}
+
+.service-charge span {
+    text-decoration: line-through;
+}
+
+.book-now-btn a {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+/* =================Services section styling ends==================== */
+
+
+/* =================Popup styling starts==================== */
+
+.popup-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(6px);
+    display: none;
+}
+
+.popup-wrapper.show {
+    display: block;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 350px;
+    padding: 1.6rem;
+    border-radius: 6px;
+    margin: 0 auto;
+    transform: translateY(30%);
+}
+
+.cancel-btn img {
+    display: block;
+    margin-left: auto;
+    width: 17px;
+    cursor: pointer;
+    transition: .1s ease;
+}
+
+.cancel-btn img:hover {
+    opacity: .5;
+}
+
+.popup-heading h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+}
+
+.input-field label {
+    font-size: 16px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #eeeeea;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    padding-left: 6px;
+    margin-top: -6px;
+    border-radius: 3px;
+}
+
+.submit-btn input {
+    width: 100%;
+    height: 40px;
+    margin-top: 26px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+/* =================Popup styling ends======================*/
+
+
+/* =============Media queries for tablets ipads portrait mode============= */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+
+/* ==============Media queries for mobile phones landscape mode============== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+
+/* ================Media queries for small devices mobile phones================ */
+
+@media (max-width: 575px) {
+    html {
+        font-size: 13px;
+    }
+    .banner-section {
+        padding: 0;
+    }
+    .banner-section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+    }
+    .list-row {
+        flex-direction: column-reverse;
+    }
+    .service a {
+        width: 100%;
+    }
+    .side-padding {
+        padding: 0 20px;
+    }
+    .services-content {
+        padding: 0;
+    }
+    .services-left-section {
+        margin-top: 28px;
+    }
+}
